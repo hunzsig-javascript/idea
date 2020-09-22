@@ -39,6 +39,7 @@ if (window.history) {
      */
     if (Navigator.count >= 2) {
       window.history.back();
+      return;
     }
     window.history.pushState(null, null, document.URL);
   };
